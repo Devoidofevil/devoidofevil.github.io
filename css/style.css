@@ -4,15 +4,23 @@
 }
 #header h1{
   text-align: center;
+  color: #f2f2f2;
 }
 
 body {
-  background-image: url(images/landing_page_bg.jpg);
+  background:
+   url(../images/landing_page_bg.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  background-size: cover;
 }
 
 nav.navigation {
   display: block;
   margin-bottom: 10px;
+  position: relative;
+  left: -20px;
 }
 nav.navigation  ul {
   list-style: none;
@@ -26,7 +34,7 @@ nav.navigation  ul li a {
   display: block;
   float: left;
   padding: 3px 6px;
-  color: #003366;
+  color: #99ccff;
   font-size:22px;
   text-decoration: none;
   font-weight: bold;
@@ -47,25 +55,31 @@ nav.navigation  ul li a:hover {
   display: block;
   clear: both;
   margin-bottom: 20px;
-  min-height: 500px;
+  min-height: 700px;
 }
 
 #left-sidebar {
   width: 35%;
   float: left;
   margin: 0 15px;
-  background: #ccc; 
-  min-height: 500px; 
+  background: #00284d; 
+  min-height: 700px; 
   text-align: center;
 }
 #right {
   float: right;
   width: 62%;
-  background: #efefef; 
+  background: #004f99;
   text-align: center;
-  min-height: 500px;
+  min-height: 700px;
 }
-footer{text-align: center;}
+footer{
+  text-align: center;
+  color: #f2f2f2;
+  position:absolute;
+  bottom:0;
+  left:45%;
+}
 /* clearfix */
 .clearfix:after {
   content: “.”;
