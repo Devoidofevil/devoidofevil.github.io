@@ -36,6 +36,29 @@ body {
   position:relative;
   left:20px;
 }
+nav.contact-navigation {
+  display: block;
+  position: relative;
+  right:20px;
+}
+nav.contact-navigation  ul {
+  list-style: none;
+  font-size: 14px; 
+  text-align: center;
+}
+nav.contact-navigation  ul li {
+  display: inline-block;
+  background-color: rgba(255,119,51,0.1);
+}
+nav.contact-navigation  ul li a {
+  display: block;
+  float: left;
+  padding: 15px;
+  color: #ffeee6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 nav.navigation {
   display: block;
   margin-bottom: 10px;
@@ -109,6 +132,16 @@ nav.navigation  ul li a:hover {
   background-image: linear-gradient(rgba(153,51,0,0.5),rgba(255,119,51,0.5));
   text-align: left;
   height: 770px;
+  color: white;
+  box-shadow: 0 0 8px 8px #993300 inset;
+}
+
+#contacts {
+  float: right;
+  width: 56%;
+  background-image: linear-gradient(rgba(153,51,0,0.5),rgba(255,119,51,0.5));
+  text-align: left;
+  height: 165px;
   color: white;
   box-shadow: 0 0 8px 8px #993300 inset;
 }
