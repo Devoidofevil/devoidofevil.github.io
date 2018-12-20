@@ -16,7 +16,19 @@ body {
    -o-background-size: cover;
   background-size: cover;
 }
+#chess-puzzle {
+  width:95%;
+  position: relative;
+  left:18px;
+}
 
+#about {
+  width:95%;
+  font-weight:bold;
+  white-space:normal;
+  position:relative;
+  left:20px;
+}
 nav.navigation {
   display: block;
   margin-bottom: 10px;
@@ -69,14 +81,14 @@ nav.navigation  ul li a:hover {
   display: block;
   clear: both;
   margin-bottom: 20px;
-  min-height: 700px;
+  min-height: 355px;
 }
 
 #left-sidebar {
   width: 35%;
   float: left;
   margin: 0 15px;
-  background-image: linear-gradient(rgba(77,26,0,0.6),rgba(230,77,0,0.6));
+  background-image: linear-gradient(rgba(77,26,0,0.5),rgba(230,77,0,0.5));
   min-height: 355px; 
   text-align: center;
   box-shadow: 0 0 8px 8px #4d1a00 inset;
@@ -84,9 +96,10 @@ nav.navigation  ul li a:hover {
 #right {
   float: right;
   width: 62%;
-  background-image: linear-gradient(rgba(153,51,0,0.6),rgba(255,119,51,0.6));
-  text-align: center;
+  background-image: linear-gradient(rgba(153,51,0,0.5),rgba(255,119,51,0.5));
+  text-align: left;
   min-height: 700px;
+  color: white;
   box-shadow: 0 0 8px 8px #993300 inset;
 }
 footer{
