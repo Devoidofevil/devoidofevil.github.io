@@ -136,6 +136,16 @@ nav.navigation  ul li a:hover {
   box-shadow: 0 0 8px 8px #993300 inset;
 }
 
+#blog-container {
+  float: right;
+  width: 62%;
+  background-image: linear-gradient(rgba(153,51,0,0.5),rgba(255,119,51,0.5));
+  text-align: left;
+  height: 770px;
+  color: white;
+  box-shadow: 0 0 8px 8px #993300 inset;
+}
+
 #contacts {
   float: right;
   width: 56%;
