@@ -124,7 +124,7 @@ nav.navigation  ul li a:hover {
   background-image: linear-gradient(rgba(77,26,0,0.5),rgba(230,77,0,0.5));
   min-height: 355px; 
   text-align: center;
-  box-shadow: 0 0 8px 8px #4d1a00 inset;
+  box-shadow: 0 0 0px 0px #4d1a00 inset;
 }
 #right {
   float: right;
@@ -133,7 +133,7 @@ nav.navigation  ul li a:hover {
   text-align: left;
   height: 770px;
   color: white;
-  box-shadow: 0 0 8px 8px #993300 inset;
+  box-shadow: 0 0 0px 0px #993300 inset;
 }
 
 #blog-container {
@@ -143,9 +143,19 @@ nav.navigation  ul li a:hover {
   text-align: left;
   height: 770px;
   color: white;
-  box-shadow: 0 0 8px 8px #993300 inset;
+  box-shadow: 0 0 0px 0px #993300 inset;
+  overflow-y: scroll;
 }
 
+#blog-container::-webkit-scrollbar {
+  width:30px; // manage scrollbar width here
+}
+#blog-container::-webkit-scrollbar * {
+  background:transparent; // manage scrollbar background color here
+}
+#blog-container::-webkit-scrollbar-thumb {
+  background:rgba(255,0,0,0.1) !important; // manage scrollbar thumb background color here
+}
 #contacts {
   float: right;
   width: 56%;
@@ -153,7 +163,7 @@ nav.navigation  ul li a:hover {
   text-align: left;
   height: 165px;
   color: white;
-  box-shadow: 0 0 8px 8px #993300 inset;
+  box-shadow: 0 0 0px 0px #993300 inset;
 }
 footer{
   text-align: center;
