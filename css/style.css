@@ -16,10 +16,17 @@ body {
    -o-background-size: cover;
   background-size: cover;
 }
+#chess-ques {
+  width:95%;
+  font-weight:bold;
+  white-space:normal;
+  position:relative;
+  left:16%;
+}
 #chess-puzzle {
   width:95%;
   position: relative;
-  left:18px;
+  left:18%;  
 }
 
 #about {
@@ -74,6 +81,9 @@ nav.navigation  ul li a:hover {
   left: 5%;
 }
 
+#chess_puzzle {
+  max-width: 65%;
+}
 #DP {
   max-width: 100%
 }
@@ -98,7 +108,7 @@ nav.navigation  ul li a:hover {
   width: 62%;
   background-image: linear-gradient(rgba(153,51,0,0.5),rgba(255,119,51,0.5));
   text-align: left;
-  min-height: 700px;
+  height: 770px;
   color: white;
   box-shadow: 0 0 8px 8px #993300 inset;
 }
