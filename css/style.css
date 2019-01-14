@@ -6,11 +6,12 @@
 }
 #header h1{
   text-align: center;
-  color: rgba(16,16,16);
+  color: black;
+  font-weight: 500;
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto', sans-serif;
   /* background: url(../images/landing_page_bg.jpg) no-repeat center center fixed; */
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -90,7 +91,7 @@ nav.article ul li:hover::-webkit-scrollbar * {
 
 nav.contact-navigation {
   right: 0;
-  top: 50%;
+  top: 40%;
   position: fixed;
 }
 
@@ -107,9 +108,6 @@ nav.contact-navigation  ul li a {
 
 nav.navigation {
   display: block;
-  margin-bottom: 10px;
-  position: relative;
-  left: 6px;
 }
 nav.navigation  ul {
   list-style: none;
@@ -127,7 +125,7 @@ nav.navigation  ul li a {
   color: #ffffff;
   font-size:22px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400;
 }
 nav.navigation  ul li a:hover {
   background: rgba(192,192,192,0.3);
@@ -255,12 +253,11 @@ margin-left: 20px;
 }
 
 footer{
-  display: block;
-  text-align: center;
-  color: rgba(16,16,16);
+  color: black;
   position: fixed;
   bottom: 0;
   right: 10px;
+  font-weight: 100;
 }
 
 /* clearfix */
@@ -298,7 +295,6 @@ html[xmlns] .clearfix {
 }
 
 .ct-us-header {
-  font-family: Roboto-Light;
   font-size: 30px;
   font-weight: 100;
   margin: 7px auto;
@@ -406,3 +402,74 @@ html[xmlns] .clearfix {
    stroke-linecap: round;
    animation: dash 1.5s ease-in-out infinite;
  }
+
+
+/* code for blog page. */
+.tab {
+  position: relative;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.tab input {
+  position: relative;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 35px;
+  position: relative;
+  background: #f5f5f5;
+  font-weight: 500;
+  line-height: 3;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px #ccccccb0;
+}
+
+.tab label span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.tab-content {
+  max-height: 0;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  background: #d2cfcf8a;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+.tab-content > div {
+  padding: 20px;
+}
+
+.tab input:checked~.tab-content {
+  max-height: 1000px; 
+}
+
+.tab label::after {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  font-size: 22px;
+  display: block;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.tab input[type=checkbox]+label::after {
+  content: "+";
+}
+
+.tab input[type=checkbox]:checked+label::after {
+  content: "-";
+}
