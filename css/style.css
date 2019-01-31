@@ -5,14 +5,16 @@
  flex-direction: column;
 }
 #header h1{
+  font-family: Roboto;
+  font-size: 40px;
+  margin: 20px 0px;
+  font-weight: 300;
   text-align: center;
   color: black;
-  font-weight: 500;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* background: url(../images/landing_page_bg.jpg) no-repeat center center fixed; */
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -111,25 +113,29 @@ nav.navigation {
 }
 nav.navigation  ul {
   list-style: none;
-  font-size: 14px; 
+  font-size: 14px;
   text-align: center;
+  padding: 0px;
 }
 nav.navigation  ul li {
   display: inline-block;
   background-color: rgba(64,64,64,0.5);
+  border-radius: 3px;
+  margin: 0px 4px;
+  text-transform: capitalize;
 }
 nav.navigation  ul li a {
   display: block;
   float: left;
   padding: 3px 36px;
-  color: #ffffff;
+  color: #fff;
   font-size:22px;
   text-decoration: none;
   font-weight: 400;
 }
 nav.navigation  ul li a:hover {
-  background: rgba(192,192,192,0.3);
-  color: #111111;
+  background: rgba(192, 192, 192, 0.62);
+  color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -141,16 +147,16 @@ nav.navigation  ul li a:hover {
 /* page Content */
 
 #profile-picture-wrapper {
-  background: white;
+  background: #fff;
 }
 
 #chess_puzzle {
-  max-width: 65%;
+  width: 50%;
+  object-fit: cover;
+  margin: 0px auto;
 }
 #chess_puzzle_sol {
-  position:relative;
-  right:16%;
-  max-width: 65%;
+  width: 100%;
 }
 #DP {
   max-width: 100%
@@ -403,7 +409,6 @@ html[xmlns] .clearfix {
    animation: dash 1.5s ease-in-out infinite;
  }
 
-
 /* code for blog page. */
 .tab {
   position: relative;
@@ -428,6 +433,10 @@ html[xmlns] .clearfix {
   line-height: 3;
   cursor: pointer;
   box-shadow: 0px 3px 6px #ccccccb0;
+}
+
+.tab label:hover {
+  background: #efeeee;
 }
 
 .tab label span {

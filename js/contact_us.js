@@ -16,8 +16,6 @@ function showLoadingIndicator() {
 }
 
 function showSuccessMessage(response) {
-    // console.log('response');
-    // console.log(response);
     loading.classList.add('is-hidden');
     alert('Form submitted successfully!');
     form.classList.remove('is-hidden');
